@@ -1,0 +1,448 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: #fff;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: gray;
+}
+body header .greenheader {
+  padding: 0 30px;
+  background-color: #82ae46;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+body header .greenheader .phonetext {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+body header .greenheader .phonetext i {
+  color: white;
+}
+body header .greenheader .phonetext span {
+  color: white;
+}
+body header .greenheader .emailtext {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+body header .greenheader .emailtext i {
+  color: white;
+}
+body header .greenheader .emailtext span {
+  color: white;
+}
+body header .greenheader .text {
+  display: flex;
+  gap: 10px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+body header .greenheader .text span {
+  color: white;
+}
+body header .header {
+  top: 0;
+  z-index: 100;
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body header .header .logo span {
+  font-weight: 800;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: inherit;
+  white-space: nowrap;
+  color: #82ae46;
+  cursor: pointer;
+  transition: 0.4s;
+}
+body header .header .logo span:hover {
+  color: black;
+}
+body header .header .navbar {
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
+}
+body header .header .navbar #ul {
+  display: flex;
+}
+body header .header .navbar #ul li {
+  margin: 20px 0px;
+  position: relative;
+}
+body header .header .navbar #ul li a {
+  font-size: 11px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+body header .header .navbar #ul .shop .shophov {
+  position: absolute;
+  top: 0;
+  z-index: 22;
+  padding: 10px;
+  width: 180px;
+  height: 190px;
+  display: none;
+  align-items: end;
+}
+body header .header .navbar #ul .shop .shophov ul {
+  background-color: #f9f9f9;
+}
+body header .header .navbar #ul .shop .shophov ul li {
+  margin: 5px 0;
+}
+body header .header .navbar #ul .shop:hover .shophov {
+  display: flex;
+}
+body header .header .navbar p {
+  margin-right: 10px;
+  color: #000000;
+}
+body header .header .navbar p span {
+  font-size: 15px;
+  cursor: pointer;
+}
+body header .header .navbar #heart span {
+  color: red;
+  font-size: 18px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+body header .header .barlogo {
+  display: none;
+}
+body main .producsec {
+  margin: 30px 0;
+  text-align: center;
+  position: relative;
+}
+body main .producsec .formbox form {
+  width: 50%;
+  margin: 30px auto;
+}
+body main .producsec .formbox form input {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000000;
+}
+body main .producsec .formbox .buttonbox {
+  width: 90%;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: start;
+  gap: 20px;
+}
+body main .producsec .formbox .buttonbox button {
+  color: white;
+  background-color: #000000;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+body main .producsec .formbox .buttonbox button:hover {
+  color: #000000;
+  background-color: white;
+}
+body main .producsec .boxx {
+  width: 74%;
+  gap: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body main .producsec .boxx .inbox {
+  cursor: pointer;
+  overflow: hidden;
+  width: 255px;
+  padding-bottom: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+body main .producsec .boxx .inbox .imgbox {
+  position: relative;
+}
+body main .producsec .boxx .inbox .imgbox img {
+  width: 100%;
+  transition: 0.4s;
+}
+body main .producsec .boxx .inbox p {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Poppins", Arial, sans-serif;
+}
+body main .producsec .boxx .inbox .text .money {
+  display: block;
+  align-items: center;
+}
+body main .producsec .boxx .inbox .text .money p {
+  padding: 10px 0;
+  color: #82ae46;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  animation: animation1 1s forwards;
+}
+body main .producsec .boxx .inbox .text .money p span {
+  text-decoration: line-through;
+  color: #b3b3b3;
+}
+body main .producsec .boxx .inbox .text .boxs {
+  display: none;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 5px;
+}
+body main .producsec .boxx .inbox .text .boxs .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #82ae46;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+body main .producsec .boxx .inbox .text .boxs .box i {
+  font-size: 15px;
+}
+body main .producsec .boxx .inbox:hover {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.096);
+}
+body main .producsec .boxx .inbox:hover .imgbox img {
+  transform: scale(1.1);
+}
+body main .producsec .boxx .inbox:hover .text .money {
+  display: none;
+}
+body main .producsec .boxx .inbox:hover .text .boxs {
+  display: flex;
+  animation: animation1 1s forwards;
+}
+body main .producsec .boxx #loadgift {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+body main .producsec #informationbox {
+  width: 65%;
+  height: 300px;
+  margin: 30px auto;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  z-index: 100;
+  display: none;
+  border: 1px solid rgba(0, 0, 0, 0.093);
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.251);
+}
+body main .producsec #informationbox .img img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+body main .producsec #informationbox .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  text-align: start;
+}
+body main .producsec #informationbox .text p {
+  color: black;
+}
+body main .producsec #informationbox .text p span {
+  color: red;
+}
+body main .producsec #informationbox i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 1rem;
+  color: black;
+  cursor: pointer;
+  transition: 0.5s;
+}
+body main .producsec #informationbox i:hover {
+  color: red;
+  transform: scale(1.3);
+}
+body footer {
+  margin-top: 30px;
+  padding-top: 30px;
+}
+body footer .footer .boxs {
+  display: flex;
+  gap: 30px;
+  width: 72%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+body footer .footer .boxs .vegefoodbox {
+  width: 223px;
+  overflow: hidden;
+}
+body footer .footer .boxs .vegefoodbox .text h2 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: "Poppins", Arial, sans-serif;
+}
+body footer .footer .boxs .vegefoodbox .text p {
+  margin-bottom: 1rem;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+body footer .footer .boxs .vegefoodbox .logoboxs {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+  padding: 30px 0 10px;
+}
+body footer .footer .boxs .vegefoodbox .logoboxs .logobox {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.02);
+}
+body footer .footer .boxs .vegefoodbox .logoboxs .logobox i {
+  font-size: 26px;
+}
+body footer .footer .boxs .menubox {
+  width: 176px;
+  margin: 0 30px;
+  padding: 0 0 24px 30px;
+}
+body footer .footer .boxs .menubox h3 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: "Poppins", Arial, sans-serif;
+}
+body footer .footer .boxs .menubox ul li {
+  padding: 8px 0;
+  line-height: 1.8;
+  font-weight: 400;
+}
+body footer .footer .boxs .menubox ul li a {
+  color: #000000;
+  font-size: 14px;
+  font-family: "Poppins", Arial, sans-serif;
+}
+body footer .footer .boxs .helpbox {
+  margin-right: 30px;
+  padding-right: 30px;
+}
+body footer .footer .boxs .helpbox h2 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: "Poppins", Arial, sans-serif;
+}
+body footer .footer .boxs .helpbox .inbox {
+  display: flex;
+}
+body footer .footer .boxs .helpbox .inbox ul li {
+  padding: 8px 0;
+  line-height: 1.8;
+  font-weight: 400;
+}
+body footer .footer .boxs .helpbox .inbox ul li a {
+  color: #000000;
+  font-size: 14px;
+  font-family: "Poppins", Arial, sans-serif;
+}
+body footer .footer .boxs .helpbox .inbox .faqbox {
+  margin-left: 20px;
+  padding-top: 8px;
+}
+body footer .footer .boxs .helpbox .inbox .faqbox p {
+  padding: 8px 0;
+}
+body footer .footer .boxs .havebox {
+  width: 210px;
+  margin-left: 30px;
+  padding-left: 30px;
+}
+body footer .footer .boxs .havebox h2 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: "Poppins", Arial, sans-serif;
+}
+body footer .footer .boxs .havebox .text {
+  display: flex;
+  margin-bottom: 20px;
+}
+body footer .footer .boxs .havebox .text i {
+  margin-right: 20px;
+}
+body footer .End {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  margin: 30px 0;
+}
+body footer .End p {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+body footer .End p span {
+  color: #82ae46;
+  cursor: pointer;
+}
+
+.paraqraf {
+  color: black;
+  font-size: 20px;
+  width: 100%;
+  font-weight: 600;
+}
